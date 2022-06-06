@@ -1,9 +1,94 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>My CV</title>
-  </head>
-  <body>
-      test
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>My home page</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+    <!--設定body的起始顏色為灰底黑字-->
+        <script>
+            onload =showmsg();
+            function showmsg(){
+                alert('Welecom to my CV webpage!');
+            }
+        </script>
+        <script>
+            function myfuc(){
+                var element = document.body;
+                element.classList.toggle("dark");
+                // 使用叫做dark的Class把底變成黑色,字變成白色
+            }
+        </script>
+        <h1><p>WANG TING CHIEH</p></h1>
+        <h1><img class="style1"src="picture/face.jpg" alt="face"></h1>
+        <!--使用Class名位style1的CSS,將圖放到最左邊,讓稜角變圓滑,設定圖片高度150px-->
+        <hr>
+        <div >
+            <button onclick="myfuc()">Change Mode</button>
+        </div>
+        <div >
+            <h2 id="inf">Email</h2>
+            <!--設置一個由左到右是灰到藍的漸層,高度為30px-->
+            <h4>ericwang0621@gmail.com</h4>
+            <!--在div標籤中的h4標籤,當指標移動上去改變顏色-->
+            <h2 id="inf" >Phone</h2>
+            <!--h2標籤開頭的第一個字變成藍色且為1.25倍大-->
+            <h4>0976-670-621</h4>
+            <h2 id="inf">Date of birth</h2>
+            <h4>2002/6/21</h4>
+            <h2 id="inf">School & Major in</h2>
+            <h4>National Centeral University , Management Information System</h4>
+        </div>
+        <div >
+            <table>
+            <!--設定寬度為填滿整個頁面-->
+                <caption><h3>Interest</h3></caption>
+                <!--調整字體和字的大小-->
+                <thead>
+                <!--設定thead背景顏色為blanchedalmond,設定邊框為2-->
+                    <th></th>
+                    <!--設定有th標籤的字體置中,邊距12px-->
+                    <th>Play badmintom</th>
+                    <th>Biking</th>
+                    <th>Workout</th>
+                </thead>
+                <tbody>
+                <!--設定tbody背景顏色為bisque-->
+                    <tr>
+                        <td>Picture</td>
+                        <!--設定有td標籤的字體置中,邊距12px-->
+                        <td><img id="self"src=picture/profile.jpg width="300" height="200"></td>
+                        <td><img id="self"src=picture/bike.jpg width="200" height="300"></td>
+                        <td><img id="self"src=picture/workout.jpg width="200" height="300"></td>
+                    </tr>
+                    <tr>
+                        <td>Assoicate Record</td>
+                        <td>
+                            <ol>
+                                <center>
+                                    <li>National High School Games of badmintom in HSINCHU ,2018 FIRST PLACE</li>
+                                    <li>National High School Games of badmintom in HSINCHU ,2020 FIRST PLACE</li>
+                                    <li>National Intercollegiate Athletic Games in North area,2021 SIXTH PLACE</li>
+                                    <li>National Intercollegiate Athletic Games in North area,2022 SIXTH PLACE</li>
+                                </center>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Tarvel around Taiwan island,2020</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Since 2021 May</li>
+                            </ol>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+           
+        </div>
+    </body>
 </html>

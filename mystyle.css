@@ -1,0 +1,42 @@
+.style1{
+    float:left;
+    border-radius: 50px;
+    height: 250px;
+}
+#inf{
+    height: 40px;
+    background-image: linear-gradient(to right,rgba(114, 130, 146, 0.5),rgba(37, 37, 166, 0.9));
+}
+body{
+    background-color: gray;
+    color:black;
+}
+.dark{
+    background-color: black;
+    color:white;
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color:blanchedalmond;
+    border:"2";
+}
+tbody{
+    background-color: bisque;
+}
+th,td{
+    text-align: center;
+    padding:12px;
+}
+div:hover h4{
+    background-color: antiquewhite;
+}
+h2::first-letter{
+    color:blue;
+    font-size:125%
+}
+h3{
+    font-family: "Garamond",serif;
+    font-size:25px;
+}   
